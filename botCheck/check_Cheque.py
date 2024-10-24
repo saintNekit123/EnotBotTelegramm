@@ -5,7 +5,6 @@ import botCheck.db as db
 from urllib.parse import parse_qs
 from botCheck import check_xlsx
 from datetime import datetime
-from urllib.parse import parse_qs
 
 def find_Cheque(qr):
     file_path = 'response.json'
