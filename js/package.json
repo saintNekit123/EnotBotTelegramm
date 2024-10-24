@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "jsqr": "^1.4.0"
+  },
+  "name": "enotbot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "testJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
