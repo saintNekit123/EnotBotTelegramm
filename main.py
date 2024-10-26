@@ -304,7 +304,7 @@ def get_photo_qr(message: types.Message):
                     keyboard = create_button.create_send_exit_keyboard()
                     bot.send_message(message.chat.id, "К сожалению, сумма чека не подходит для участия в Розыгрыше😔 Хотите добавить ещё один чек? 'Прислать чек' или 'Выйти'", reply_markup=keyboard)
                     bot.register_next_step_handler(message, bot_again)
-                elif check_Cheque.find_Cheque(qr_code) == "Куплен не в Enot":
+                elif check_Cheque.find_Cheque(qr_code) == "Куплен не в Магазине":
                     keyboard = create_button.create_send_exit_keyboard()
                     bot.send_message(message.chat.id, "Чек был выдан не в нашем магазине! 🧐 \nХотите добавить ещё один чек? 'Прислать чек' или 'Выйти'", reply_markup=keyboard)
                     bot.register_next_step_handler(message, bot_again)
