@@ -31,17 +31,17 @@ def find_Cheque(qr):
                 if error_cheque == "Превышено количество обращений по чеку.":
                     return "Первышено обращение"
                 
-                elif inn_org == "744302208991" or "742800763088":
+                elif inn_org == "Your_INN" or "Your_INN":
                     if date_obj.year < 2024 and date_obj.month < 11 and date_obj.month < 11:
                         return "Просрочен"
                     else:
                         if totalSum < 200000:
                             return "Меньше 2000"
                         else:
-                            return "Всё збс"
+                            return "Всё хорошо"
 
                 else:
-                    return "Куплен не в Enot"
+                    return "Куплен не в Магазине"
                 
         except FileNotFoundError:
             print(f"Файл {file_path} не найден.")
